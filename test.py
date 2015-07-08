@@ -21,7 +21,6 @@ GPIO.setup(led, GPIO.OUT)
 count = 0
 speed = 1
 
-
 def led_light():
     global count
     global speed
@@ -33,8 +32,7 @@ def led_light():
     count += 1
     return count
 
-
-while count < 3:
+while count < 4:
     count = led_light()
     print(count)
 
